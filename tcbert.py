@@ -134,18 +134,21 @@ threshold = 5e-03#or 0.005    #0.5
 
 ['Toxic' if pred >=threshold else 'Sincere' for pred in preds]
 
-#results
+#actual output 'preds', 2021.03.27 ran on Google Colab
+#array([[5.6299049e-04],
+#       [3.3487119e-02],
+#       [4.9054455e-03],
+#       [4.9818565e-05],
+#       [2.1208545e-04],
+#       [3.5636741e-01]], dtype=float32)
+#     
+#results summary
 #1 "Do you like flowers?" 5.629e-04, Sincere
 #2 "Why all the bad guys wear a black hat?" 3.348e-02, Toxic
 #3 "Why so many taxi drivers are so rude?" 4.905e-03, Sincere
 #4 "May I have your email ID?" 4.981e-05, Sincere
 #5 "How are you today?" 2.120e-04, Sincere
 #6 "Why are you such a bad ass?" 3.563e-01, Toxic
-
+#
 #FINAL RESULT
-#All passed!!
-
-
-
-
-
+#All passed!! Because all 6 sentences are clasified correctly
